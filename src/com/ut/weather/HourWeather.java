@@ -74,6 +74,10 @@ public class HourWeather {
         this.temperature = temperature;
     }
 
+    public String format() {
+        return String.format("%s-%s-%s %s:00 %s℃ %s %s\n", year, month, day, hour, temperature, windPower, windDirection);
+    }
+
     @Override
     public String toString() {
         return "HourWeather {\n" +

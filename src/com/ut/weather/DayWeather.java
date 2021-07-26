@@ -83,6 +83,10 @@ public class DayWeather {
         this.nightWindPower = nightWindPower;
     }
 
+    public String format() {
+        return String.format("%s-%s-%s day：%s℃ %s night：%s℃ %s \n", year, month, day, dayAirTemperature, dayWindPower, nightAirTemperature, nightWindPower);
+    }
+
     @Override
     public String toString() {
         return "DayWeather {\n" +
